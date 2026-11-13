@@ -1,29 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>مرحبًا بكم في موقعي</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="الموقع الرسمي لمجمع أبو أيوب الأنصاري التعليمي">
+<title>مجمع أبو أيوب الأنصاري</title>
 <style>
 *{box-sizing:border-box}
-body{font-family:Tahoma,Arial,sans-serif;background:#f0f8ff;color:#183c2b;margin:0;padding:clamp(12px,4vw,36px);line-height:1.9;min-height:100vh}
-main{width:100%;max-width:900px;margin:0 auto;background:#fff;padding:clamp(18px,5vw,42px);border-radius:22px;box-shadow:0 8px 30px rgba(0,0,0,.09);overflow-wrap:anywhere}
-h1,h2,h3{line-height:1.4;color:#12623e;margin-top:0}
-p{font-size:1.05rem;margin:16px 0}
-a{color:#087fbd;font-weight:600;text-underline-offset:4px;overflow-wrap:anywhere}
-img{display:block;max-width:100%;height:auto;margin:20px auto;border-radius:14px}
-button{font:inherit;font-weight:bold;padding:12px 22px;border:0;border-radius:12px;background:#16764a;color:white;cursor:pointer;max-width:100%;box-shadow:0 4px 12px rgba(22,118,74,.2)}
-a.bahramah-button{display:inline-block;padding:12px 22px;background:#16764a;color:#fff;text-decoration:none;border-radius:12px;font-weight:bold;margin:8px 0}
-button:active{transform:scale(.98)}
-footer{text-align:center;max-width:900px;margin:24px auto 0;padding:14px;color:#12623e;font-size:.95rem}
-@media(max-width:480px){body{padding:10px 8px;}main{border-radius:14px;}button{width:100%;}p{font-size:1rem}}
+body{margin:0;font-family:Tahoma,Arial;background:#f7f4ec;color:#263746;line-height:1.9}
+header{background:white;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;box-shadow:0 3px 15px #17365312}
+.logo{color:#173653;font-size:21px;font-weight:bold}
+nav a{color:#173653;text-decoration:none;margin:8px}
+.hero{background:linear-gradient(120deg,#173653,#326b89);color:white;padding:85px 8%;text-align:center}
+.hero h1{font-size:clamp(30px,5vw,48px);margin:10px}
+.hero p{font-size:18px;color:#e8edf1}
+.btn{display:inline-block;background:#d4aa58;color:#172c3c;padding:12px 25px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:15px}
+section{padding:55px 8%;text-align:center}
+h2{color:#173653}
+.about{max-width:850px;margin:auto;background:white;padding:28px;border-radius:14px;border-right:5px solid #c69a45}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:1000px;margin:30px auto}
+.card{background:white;padding:25px;border-radius:13px;box-shadow:0 5px 20px #17365310}
+.card h3{color:#245b7a}
+.icon{font-size:32px}
+.registration{background:white;border:1px dashed #c69a45;border-radius:14px;max-width:850px;margin:auto;padding:25px}
+footer{background:#173653;color:white;text-align:center;padding:25px}
+footer strong{color:#e5bd72}
 </style>
 </head>
 <body>
+<header>
+<div class="logo">مجمع أبو أيوب الأنصاري</div>
+<nav>
+<a href="#home">الرئيسية</a>
+<a href="#about">عن المجمع</a>
+<a href="#values">قيمنا</a>
+<a href="#registration">التسجيل</a>
+</nav>
+</header>
+
 <main>
-<h1>موقعي الأول</h1>
-<p>أتعلم إنشاء المواقع بلغة بحرأمة</p>
+<div class="hero" id="home">
+<p>أهلاً وسهلاً بكم</p>
+<h1>مرحباً بكم في مجمع أبو أيوب الأنصاري</h1>
+<p>صرح تعليمي وتربوي يسعى إلى نشر العلم والمعرفة وبناء جيل واعٍ متمسك بالقيم الفاضلة.</p>
+<a class="btn" href="#about">تعرّف على المجمع</a>
+</div>
+
+<section id="about">
+<h2>عن المجمع</h2>
+<div class="about">
+<p>يهدف مجمع أبو أيوب الأنصاري إلى توفير بيئة تعليمية منظمة تساعد الطلاب على التحصيل العلمي، وتنمية الأخلاق الحسنة، واحترام العلم والمعلم، والاستعداد للمستقبل بالمعرفة والعمل.</p>
+</div>
+</section>
+
+<section id="values">
+<h2>قيمنا وأهدافنا</h2>
+<div class="cards">
+<div class="card"><div class="icon">📚</div><h3>طلب العلم</h3><p>تشجيع القراءة والتعلم المستمر والحرص على الفهم والإتقان.</p></div>
+<div class="card"><div class="icon">🤝</div><h3>حسن الخلق</h3><p>تعزيز الاحترام والتعاون والمسؤولية وحسن التعامل.</p></div>
+<div class="card"><div class="icon">🌱</div><h3>بناء المستقبل</h3><p>تنمية قدرات الطلاب ومهاراتهم وإعدادهم للمستقبل.</p></div>
+</div>
+</section>
+
+<section id="registration">
+<div class="registration">
+<h2>التسجيل الإلكتروني</h2>
+<p>سيتم ربط هذا القسم بمنصة تسجيل الطلاب الأصلية عند نشرها على الاستضافة.</p>
+<p>نرحب بطلابنا ونسعد بانضمامهم إلى المجمع.</p>
+</div>
+</section>
 </main>
-<footer>بحرأمة · لغة برمجة عربية</footer>
+
+<footer>
+<div>مجمع أبو أيوب الأنصاري</div>
+<strong>بحرأمة</strong>
+<div>جميع الحقوق محفوظة © <span id="year"></span></div>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
 </body>
 </html>
