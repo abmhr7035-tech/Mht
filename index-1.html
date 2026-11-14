@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173f35">
+  <title>مجمع أبو أيوب الأنصاري | التسجيل الإلكتروني</title>
+  <style>
+    :root{--green:#173f35;--green2:#245b4b;--gold:#c6a45b;--cream:#f7f5ef;--ink:#202923;--muted:#68736c;--white:#fff}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.8}
+    header{background:linear-gradient(135deg,var(--green),#102d27);color:#fff;padding:30px 18px 54px;text-align:center}
+    .mark{width:66px;height:66px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;margin:0 auto 12px;color:var(--gold);font-size:28px;font-weight:bold}
+    header h1{margin:0;font-size:clamp(23px,5vw,34px)}
+    header p{margin:8px 0 0;color:#e4e9e4}
+    main{width:min(920px,calc(100% - 28px));margin:-28px auto 40px;position:relative}
+    .card{background:var(--white);border-radius:18px;padding:clamp(20px,4vw,34px);box-shadow:0 12px 34px #183b2d13;margin-bottom:20px}
+    h2{color:var(--green);font-size:22px;margin:0 0 12px}
+    .intro{color:var(--muted);margin:0}
+    .notice{background:#fff8e8;border-right:4px solid var(--gold);padding:12px 15px;border-radius:8px;color:#5d4a24;font-size:14px;margin-top:18px}
+    form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .field{display:flex;flex-direction:column;gap:6px}
+    .full{grid-column:1/-1}
+    label{font-weight:bold;font-size:14px}
+    input,select,textarea{width:100%;padding:12px 13px;border:1px solid #d9dfd9;border-radius:9px;background:#fff;font:inherit;font-size:15px;color:var(--ink);outline:none}
+    input:focus,select:focus,textarea:focus{border-color:var(--green2);box-shadow:0 0 0 3px #245b4b18}
+    textarea{min-height:90px;resize:vertical}
+    input[type=file]{padding:9px}
+    button{grid-column:1/-1;border:0;border-radius:10px;background:var(--green);color:white;padding:14px;font:inherit;font-weight:bold;font-size:16px;cursor:pointer}
+    button:hover{background:var(--green2)}
+    .small{font-size:13px;color:var(--muted);margin:12px 0 0}
+    footer{text-align:center;padding:22px;color:#e7eee9;background:#102d27;font-size:13px}
+    footer strong{color:var(--gold)}
+    @media(max-width:620px){form{grid-template-columns:1fr}.full{grid-column:auto}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="mark" aria-hidden="true">أ</div>
+    <h1>مجمع أبو أيوب الأنصاري</h1>
+    <p>منصة التسجيل الإلكتروني للطلاب</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>مرحباً بكم</h2>
+      <p class="intro">هذه الصفحة مخصصة لاستقبال بيانات الراغبين في التسجيل بمجمع أبو أيوب الأنصاري. يرجى تعبئة المعلومات بدقة ومراجعتها قبل إرسالها.</p>
+      <div class="notice">
+        تنبيه: هذه نسخة HTML ثابتة جاهزة للنشر على GitHub Pages. لن تصل طلبات التسجيل إلى إدارة المجمع بمجرد رفع الملف؛ يلزم ربط الاستمارة بخدمة استقبال طلبات أو خادم وقاعدة بيانات قبل استخدامها للتسجيل الفعلي.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>استمارة تسجيل طالب</h2>
+      <form id="registrationForm">
+        <div class="field">
+          <label for="fullname">الاسم الكامل *</label>
+          <input id="fullname" name="fullname" type="text" autocomplete="name" required placeholder="اكتب الاسم الرباعي">
+        </div>
+        <div class="field">
+          <label for="birthdate">تاريخ الميلاد *</label>
+          <input id="birthdate" name="birthdate" type="date" required>
+        </div>
+        <div class="field">
+          <label for="gender">الجنس *</label>
+          <select id="gender" name="gender" required>
+            <option value="">اختر</option><option>ذكر</option><option>أنثى</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="guardian">اسم ولي الأمر *</label>
+          <input id="guardian" name="guardian" type="text" required placeholder="اسم ولي الأمر">
+        </div>
+        <div class="field">
+          <label for="phone">رقم الهاتف أو واتساب *</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="رقم التواصل">
+        </div>
+        <div class="field">
+          <label for="email">البريد الإلكتروني (اختياري)</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="example@email.com">
+        </div>
+        <div class="field">
+          <label for="residence">مكان السكن *</label>
+          <input id="residence" name="residence" type="text" required placeholder="المدينة والحي">
+        </div>
+        <div class="field">
+          <label for="previous">المدرسة السابقة (اختياري)</label>
+          <input id="previous" name="previous_school" type="text" placeholder="اسم المدرسة السابقة">
+        </div>
+        <div class="field full">
+          <label for="notes">معلومات إضافية (اختياري)</label>
+          <textarea id="notes" name="notes" placeholder="اكتب أي معلومات ترغب في إبلاغ الإدارة بها"></textarea>
+        </div>
+        <div class="field">
+          <label for="photo">صورة الطالب (اختياري)</label>
+          <input id="photo" name="photo" type="file" accept="image/*">
+        </div>
+        <div class="field">
+          <label for="certificate">الشهادة أو المستند (اختياري)</label>
+          <input id="certificate" name="certificate" type="file" accept=".pdf,image/*">
+        </div>
+        <button type="submit">إرسال طلب التسجيل</button>
+      </form>
+      <p class="small">الحقول التي تحمل علامة (*) إلزامية. لا ترفع مستندات شخصية إلى موقع عام قبل التأكد من إعداد طريقة آمنة لاستقبالها.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div>مجمع أبو أيوب الأنصاري</div>
+    <strong>بحرأمة</strong>
+  </footer>
+
+  <script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('هذه نسخة تجريبية للواجهة فقط. لم يُرسل طلبك إلى إدارة المجمع؛ يجب ربط الاستمارة بخدمة استقبال الطلبات أولاً.');
+    });
+  </script>
+</body>
+</html>
